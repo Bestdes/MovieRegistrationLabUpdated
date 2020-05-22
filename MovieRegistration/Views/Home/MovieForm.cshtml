@@ -1,0 +1,74 @@
+﻿@model Movie
+
+<h2>Registration for New Movies</h2>
+<br />
+<br />
+
+@Html.ValidationSummary()
+
+@{
+    var movie = Model;
+}
+<form action="MovieResult" method="post">
+    @Html.TextBoxFor(movie => movie.ID)
+    <br />
+    @Html.TextBoxFor(movie => movie.Title)
+    <br />
+    @Html.TextBoxFor(movie => movie.Year)
+    <br />
+    @Html.TextBoxFor(movie => movie.Actors)
+    <br />
+    @Html.TextBoxFor(movie => movie.Directors)
+    <br />
+    <input type="submit" value="Submit" />
+</form>
+
+
+
+@*<form action="MovieResult" method="post">
+
+    <h4>ID</h4>
+    <input type="number" maxlength="1" name="ID" id="ID" placeholder="Place Movie ID# Here" />
+    <span class="field-validation-valid text-danger"
+          data-valmsg-for="ID"
+          data-valmsg-replace="true">
+    </span>
+    <br>
+
+    <h4>Title</h4>
+    <input type="text" name="Title" placeholder="Place Movie Title Here" />
+    <br />
+
+    <h4>Genre</h4>
+    <fieldset class="dropdownContent">
+        <select name="Genre">
+            <option>Comedy</option>
+            <option>Animation</option>
+            <option>Thriller</option>
+            <option>Action</option>
+            <option>Horrer</option>
+            <option>Thriller</option>
+            <option>Sci-Fi</option>
+            <option>Adventure</option>
+            <option>Crime</option>
+            <option>Romance</option>
+            <option>Romatic Comedy</option>
+            <option>Historic</option>
+            <option>Western</option>
+        </select>
+    </fieldset>
+
+    <h4>Year</h4>
+    <input type="number" name="Year" placeholder="Place Release Year Here" />
+    <br />
+
+    <h4>Actors</h4>
+    <input type="text" name="Actors" placeholder="Place Movie Actors Here" />
+    <br />
+
+    <h4>Directors</h4>
+    <input type="text" name="Directors" placeholder="Place Movie Directors Here" />
+    <br />
+
+    <input type="submit" value="Submit" />
+</form> *@
