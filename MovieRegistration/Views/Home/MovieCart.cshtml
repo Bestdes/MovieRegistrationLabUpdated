@@ -1,0 +1,30 @@
+﻿@model List<Movie>
+
+
+<h1>Movie Cart</h1>
+
+<table class="table-primary">
+    <tr>
+        <th>Movie Title</th>
+        <th>Genre</th>
+        <th>Year</th>
+        <th>Director(s)</th>
+        <th>Actor(s)</th>
+    </tr>
+    @foreach (var selectedMovie in Model)
+    {
+<tr>
+    <td>@selectedMovie.Title</td>
+    <td>@selectedMovie.Genre</td>
+    <td>@selectedMovie.Year</td>
+    <td>@selectedMovie.Directors</td>
+    <td>@selectedMovie.Actors</td>
+
+    @*
+    <td>
+        <a href="/ActionFigure/SelectActionFigure?name=@toy.Name">Select this guy!</a>
+    </td>*@
+
+</tr>
+    }
+</table>

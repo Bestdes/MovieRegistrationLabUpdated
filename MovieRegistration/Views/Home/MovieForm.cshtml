@@ -4,6 +4,7 @@
 <br />
 <br />
 
+@*
 @Html.ValidationSummary()
 
 @{
@@ -21,11 +22,11 @@
     @Html.TextBoxFor(movie => movie.Directors)
     <br />
     <input type="submit" value="Submit" />
-</form>
+</form>*@
 
 
 
-@*<form action="MovieResult" method="post">
+<form action="/Sessions/AddToSessionsList" method="post">
 
     <h4>ID</h4>
     <input type="number" maxlength="1" name="ID" id="ID" placeholder="Place Movie ID# Here" />
@@ -71,4 +72,4 @@
     <br />
 
     <input type="submit" value="Submit" />
-</form> *@
+</form> 

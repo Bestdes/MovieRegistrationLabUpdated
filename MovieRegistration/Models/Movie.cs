@@ -30,5 +30,15 @@ namespace MovieRegistration.Models
         public List<string> ActorsList { get; set; }
 
         public List<string> DirectorsList { get; set; }
+
+        public Movie(int iD, string title, string genre, int year, string actors, string directors)
+        {
+            ID = iD;
+            Title = title;
+            Genre = genre;
+            Year = year;
+            Actors = actors;
+            Directors = directors;
+        }
     }
 }
